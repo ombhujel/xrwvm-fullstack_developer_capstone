@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Merged Divs</title>
+  <style>
+    /* Styling for the merged section */
+    .merged-section {
+      display: flex;
+      flex-wrap: wrap; /* Allow content to wrap if needed */
+      width: 80%; /* Adjust width as needed */
+      margin: 2rem auto; /* Center the section horizontally */
+      border: 2px solid #ddd; /* Add a border */
+      border-radius: 10px; /* Rounded corners */
+      padding: 2rem; /* Add padding */
+      background-color: #f5f5f5; /* Light background color */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    }
+
+    .merged-section .contact-us {
+      flex: 1; /* Make contact info take up half the space */
+      margin-right: 1rem; /* Add some margin for spacing */
+    }
+
+    .merged-section .image-container {
+      flex: 1; /* Make image take up half the space */
+      text-align: center; /* Center the image horizontally */
+    }
+
+    .merged-section h2 {
+      margin-bottom: 1rem;
+    }
+
+    .merged-section .contact-us ul {
+      list-style: none; /* Remove default bullet points */
+      padding: 0;
+    }
+
+    .merged-section .contact-us li {
+      margin-bottom: 1rem;
+    }
+
+    .merged-section .contact-us a {
+      text-decoration: none; /* Remove underline from links */
+      color: #000; /* Black color for links */
+    }
+
+    /* Optional styling for the navbar (unchanged) */
+    .navbar-light .navbar-nav .nav-link {
+      color: white; /* White text for navbar links */
+    }
+
+    .navbar-light .navbar-nav .active,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .nav-link.dropdown-toggle {
+      color: #f0f0f0; /* Highlight active navbar link */
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      </div>
+  </nav>
+
+  <div class="merged-section">
+    <div class="contact-us">
+      <h2>Contact Us</h2>
+      <p>Here are some ways to get in touch with us:</p>
+      <ul>
+        <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+        <li>Phone: (555) 555-5555</li>
+        <li>Address: 123 Main Street, Anytown, CA 12345</li>
+      </ul>
+    </div>
+    <div class="image-container">
+      <img src="https://th.bing.com/th/id/OIP.QLpyZycz8dHlgX5Pu55tigHaD2?w=309&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Koeppel Headquarter">
+    </div>
+  </div>
