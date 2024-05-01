@@ -18,6 +18,7 @@ from django.urls import path, include
 from django.views.generic import TemplateView
 from django.conf.urls.static import static
 from django.conf import settings
+from djangoapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,5 +28,6 @@ urlpatterns = [
     path('about/', TemplateView.as_view(template_name="About.html")),
     path('login/', TemplateView.as_view(template_name="index.html"), name='login' ),
     path('register/', TemplateView.as_view(template_name="index.html"), name="register"),
+    path('get_cars/', views.get_cars, name="get_cars"),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
